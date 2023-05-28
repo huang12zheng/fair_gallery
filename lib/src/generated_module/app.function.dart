@@ -1,5 +1,5 @@
-// flutterVersion = '3.3.9'
-// dartVersion = '2.18.5'
+// flutterVersion = '3.11.0-14.0.pre.46'
+// dartVersion = '3.1.0 (build 3.1.0-149.0.dev)'
 // functionCount = 27
 // ignore_for_file: deprecated_member_use, prefer_single_quotes, unused_element, unused_field, unused_import, unnecessary_import, implementation_imports, unused_shown_name, prefer_function_declarations_over_variables, void_checks, duplicate_import, no_duplicate_case_values
 import 'package:extended_text_library/extended_text_library.dart'

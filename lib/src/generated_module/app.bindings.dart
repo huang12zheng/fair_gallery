@@ -1,7 +1,7 @@
-// flutterVersion = '3.3.9'
-// dartVersion = '2.18.5'
+// flutterVersion = '3.11.0-14.0.pre.46'
+// dartVersion = '3.1.0 (build 3.1.0-149.0.dev)'
 // widgetCount = 11
-// apiCount = 286
+// apiCount = 279
 // ignore_for_file: unused_import, unnecessary_import, implementation_imports, unused_shown_name, deprecated_member_use, prefer_single_quotes, unused_element, unused_field, duplicate_import, prefer_const_constructors, invalid_use_of_visible_for_testing_member
 import 'package:extended_text_library/extended_text_library.dart'
     as extended_text_library;
@@ -23,42 +23,32 @@ import 'package:fair_gallery/src/widget/app_bar.dart';
 import 'package:fair_gallery/src/widget/listenable_scope.dart';
 import 'package:fair/fair.dart';
 
-const String flutterVersion = '3.3.9';
-const String dartVersion = '2.18.5';
+const String flutterVersion = '3.11.0-14.0.pre.46';
+const String dartVersion = '3.1.0 (build 3.1.0-149.0.dev)';
 const int widgetCount = 11;
-const int apiCount = 286;
+const int apiCount = 279;
 
 /// appComponents
 Map<String, dynamic> appComponents = {
   'Assets.assets_fair_basic_config_json': Assets.assets_fair_basic_config_json,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_bin':
       Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_bin,
-  'Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_js':
-      Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_js,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_json':
       Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_json,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_bin':
       Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_bin,
-  'Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_js':
-      Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_js,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_json':
       Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_json,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_bin':
       Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_bin,
-  'Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_js':
-      Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_js,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_json':
       Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_json,
   'Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_bin':
       Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_bin,
-  'Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_js':
-      Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_js,
   'Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_json':
       Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_json,
   'Assets.assets_fair_lib_src_page_simple_function_domain_fair_bin':
       Assets.assets_fair_lib_src_page_simple_function_domain_fair_bin,
-  'Assets.assets_fair_lib_src_page_simple_function_domain_fair_js':
-      Assets.assets_fair_lib_src_page_simple_function_domain_fair_js,
   'Assets.assets_fair_lib_src_page_simple_function_domain_fair_json':
       Assets.assets_fair_lib_src_page_simple_function_domain_fair_json,
   'Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_bin':
@@ -69,14 +59,10 @@ Map<String, dynamic> appComponents = {
       Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_json,
   'Assets.assets_fair_lib_src_page_simple_plugin_fair_bin':
       Assets.assets_fair_lib_src_page_simple_plugin_fair_bin,
-  'Assets.assets_fair_lib_src_page_simple_plugin_fair_js':
-      Assets.assets_fair_lib_src_page_simple_plugin_fair_js,
   'Assets.assets_fair_lib_src_page_simple_plugin_fair_json':
       Assets.assets_fair_lib_src_page_simple_plugin_fair_json,
   'Assets.assets_fair_lib_src_page_simple_sugar_fair_bin':
       Assets.assets_fair_lib_src_page_simple_sugar_fair_bin,
-  'Assets.assets_fair_lib_src_page_simple_sugar_fair_js':
-      Assets.assets_fair_lib_src_page_simple_sugar_fair_js,
   'Assets.assets_fair_lib_src_page_simple_sugar_fair_json':
       Assets.assets_fair_lib_src_page_simple_sugar_fair_json,
   'Assets.assets_image_40_png': Assets.assets_image_40_png,
@@ -596,28 +582,21 @@ Map<String, dynamic> appComponents = {
 Map<String, bool> appMapping = {
   'Assets.assets_fair_basic_config_json': false,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_js': false,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_json': false,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_js': false,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_json': false,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_js': false,
   'Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_json': false,
   'Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_js': false,
   'Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_json': false,
   'Assets.assets_fair_lib_src_page_simple_function_domain_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_simple_function_domain_fair_js': false,
   'Assets.assets_fair_lib_src_page_simple_function_domain_fair_json': false,
   'Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_bin': false,
   'Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_js': false,
   'Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_json': false,
   'Assets.assets_fair_lib_src_page_simple_plugin_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_simple_plugin_fair_js': false,
   'Assets.assets_fair_lib_src_page_simple_plugin_fair_json': false,
   'Assets.assets_fair_lib_src_page_simple_sugar_fair_bin': false,
-  'Assets.assets_fair_lib_src_page_simple_sugar_fair_js': false,
   'Assets.assets_fair_lib_src_page_simple_sugar_fair_json': false,
   'Assets.assets_image_40_png': false,
   'Assets.assets_image_avatar_jpg': false,

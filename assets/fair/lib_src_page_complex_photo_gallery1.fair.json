@@ -53,7 +53,7 @@
                     "className": "SizeCacheWidget",
                     "na": {
                       "child": {
-                        "className": "ExtendedTextSelectionPointerHandler",
+                        "className": "SelectionArea",
                         "na": {
                           "child": {
                             "className": "ShareDataWidget",
@@ -446,10 +446,6 @@
                                                                       }
                                                                     }
                                                                   }
-                                                                },
-                                                                "selectionEnabled": true,
-                                                                "selectionControls": {
-                                                                  "className": "MyTextSelectionControls"
                                                                 }
                                                               }
                                                             },

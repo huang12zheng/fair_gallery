@@ -6,11 +6,11 @@ Fair 使用例子
 
 ## 映射自定义
 
-* 执行 `bin/binding/app.dart` 生成项目中代码对应的 组件，api 和 回调映射，项目中有新增文件需要生成的时候执行。
-* 执行 `bin/binding/flutter.dart` 生成 当前使用的 Flutter 源码中对应的 组件，api 和 回调映射，只用生成一次。
-* 执行 `bin/binging/packages.dart` 生成项目中引用的三方库中对应的 组件，api 和 回调映射，有新的三方库引入的时候执行。
+* 执行 `bin/generated_module/app.dart` 生成项目中代码对应的 组件，api 和 回调映射，项目中有新增文件需要生成的时候执行。
+* 执行 `bin/generated_module/flutter.dart` 生成 当前使用的 Flutter 源码中对应的 组件，api 和 回调映射，只用生成一次。
+* 执行 `bin/generated_module/packages.dart` 生成项目中引用的三方库中对应的 组件，api 和 回调映射，有新的三方库引入的时候执行。
   
-`bin/binding/binding.dart` 中是给 `bin/binding/app.dart` 和 `bin/binging/packages.dart` 使用，它的作用类似于
+`bin/generated_module/binding.dart` 中是给 `bin/binding/app.dart` 和 `bin/generated_module/packages.dart` 使用，它的作用类似于
 
 `FairBinding` 注解的用处
 

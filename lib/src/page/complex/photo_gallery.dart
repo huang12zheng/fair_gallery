@@ -193,7 +193,7 @@ class _PhotoGalleryPageState extends State<PhotoGalleryPage> {
           ),
           Expanded(
             child: SizeCacheWidget(
-              child: ExtendedTextSelectionPointerHandler(
+              child: SelectionArea(
                 child: LoadingMoreList(
                   ListConfig(
                     itemBuilder: _itemBuilder,

@@ -341,7 +341,7 @@ class _PhotoGalleryPage1State extends State<PhotoGalleryPage1> {
           ),
           Expanded(
             child: SizeCacheWidget(
-              child: ExtendedTextSelectionPointerHandler(
+              child: SelectionArea(
                 child: ShareDataWidget(
                   data: _repository,
                   child: LoadingMoreList(
@@ -482,9 +482,6 @@ class _PhotoGalleryPage1State extends State<PhotoGalleryPage1> {
                                         ],
                                       ),
                                     ),
-                                    selectionEnabled: true,
-                                    selectionControls:
-                                        MyTextSelectionControls(),
                                   ),
                                   padding: const EdgeInsets.only(
                                       left: 11, right: 11, bottom: 11),

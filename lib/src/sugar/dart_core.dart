@@ -296,7 +296,6 @@ class SugarDouble {
   static double parse(String source, [double Function(String)? onError]) =>
       double.parse(
         source,
-        onError,
       );
 
   /// Parse [source] as a double literal and return its value.
@@ -727,7 +726,6 @@ class SugarInt {
       int.parse(
         source,
         radix: radix,
-        onError: onError,
       );
 
   /// Parse [source] as a, possibly signed, integer literal.

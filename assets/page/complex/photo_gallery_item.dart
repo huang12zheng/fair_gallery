@@ -331,8 +331,6 @@ class _PhotoGalleryItemState extends State<PhotoGalleryItem> {
                 ],
               ),
             ),
-            selectionEnabled: true,
-            selectionControls: MyTextSelectionControls(),
           ),
           padding: const EdgeInsets.only(left: 11, right: 11, bottom: 11),
         ),

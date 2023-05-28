@@ -593,6 +593,28 @@ const Border _kDefaultRoundedBorder = Border(
   left: _kDefaultRoundedBorderSide,
   right: _kDefaultRoundedBorderSide,
 );
+Widget _defaultPreviewBuilder(
+    BuildContext context, Animation<double> animation, Widget child) {
+  return FittedBox(
+    fit: BoxFit.cover,
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(12 * animation.value),
+      child: child,
+    ),
+  );
+}
+
+const double _kItemExtent = 32.0;
+const EdgeInsetsDirectional _kFormDefaultInsetGroupedRowsMargin = EdgeInsetsDirectional.fromSTEB(20.0, 0.0, 20.0, 10.0);
+const EdgeInsets _kDefaultRowsMargin = EdgeInsets.only(bottom: 8.0);
+const double _kMarginTop = 22.0;
+const double _kBaseDividerMargin = 20;
+const double _kInsetDividerMargin = 14;
+const double _kLeadingSize = 28;
+const double _kLeadingToTitle = 16;
+const double _kNotchedLeadingSize = 30;
+const double _kNotchedLeadingToTitle = 12;
+const Size kDefaultSize = Size(80, 47.5);
 ''';
 
 Map<String, String> _fixes = <String, String>{
@@ -660,6 +682,7 @@ void main(List<String> args) async {
       'Gradient.linear',
       'Gradient.radial',
       'Gradient.sweep',
+      'BackgroundIsolateBinaryMessenger',
       // 支持正则
       // '^Icons.*',
       // '^Diagnostic*',

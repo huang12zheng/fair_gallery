@@ -13,76 +13,15 @@ const double _kToolbarContentDistanceBelow = _kHandleSize - 2.0;
 const double _kToolbarContentDistance = 8.0;
 
 /// Android Material styled text selection controls.
-class MyTextSelectionControls extends TextSelectionControls {
+class MyTextSelectionControls extends TextSelectionControls
+    with TextSelectionHandleControls {
   MyTextSelectionControls({this.joinZeroWidthSpace = false});
   final bool joinZeroWidthSpace;
-
-  @override
-  void handleCopy(TextSelectionDelegate delegate,
-      [ClipboardStatusNotifier? clipboardStatus]) {
-    final TextEditingValue value = delegate.textEditingValue;
-
-    String data = value.selection.textInside(value.text);
-    // remove zeroWidthSpace
-    if (joinZeroWidthSpace) {
-      data = data.replaceAll(zeroWidthSpace, '');
-    }
-    Clipboard.setData(ClipboardData(
-      text: value.selection.textInside(value.text),
-    ));
-    clipboardStatus?.update();
-    delegate.userUpdateTextEditingValue(
-      TextEditingValue(
-        text: value.text,
-        selection: TextSelection.collapsed(offset: value.selection.end),
-      ),
-      SelectionChangedCause.toolbar,
-    );
-    delegate.bringIntoView(delegate.textEditingValue.selection.extent);
-    delegate.hideToolbar();
-  }
 
   /// Returns the size of the Material handle.
   @override
   Size getHandleSize(double textLineHeight) =>
       const Size(_kHandleSize, _kHandleSize);
-
-  /// Builder for material-style copy/paste text selection toolbar.
-  @override
-  Widget buildToolbar(
-    BuildContext context,
-    Rect globalEditableRegion,
-    double textLineHeight,
-    Offset selectionMidpoint,
-    List<TextSelectionPoint> endpoints,
-    TextSelectionDelegate delegate,
-    ClipboardStatusNotifier? clipboardStatus,
-    Offset? lastSecondaryTapDownPosition,
-  ) {
-    return _TextSelectionControlsToolbar(
-      globalEditableRegion: globalEditableRegion,
-      textLineHeight: textLineHeight,
-      selectionMidpoint: selectionMidpoint,
-      endpoints: endpoints,
-      delegate: delegate,
-      clipboardStatus: clipboardStatus,
-      handleCut: canCut(delegate) ? () => handleCut(delegate, null) : null,
-      handleCopy: canCopy(delegate) ? () => handleCopy(delegate) : null,
-      handlePaste: canPaste(delegate) ? () => handlePaste(delegate) : null,
-      handleSelectAll:
-          canSelectAll(delegate) ? () => handleSelectAll(delegate) : null,
-      handleLike: () {
-        launchUrl(Uri.parse(
-            'mailto:zmtzawqlp@live.com?subject=extended_text_share&body=${delegate.textEditingValue.text}'));
-        delegate.hideToolbar();
-        delegate.userUpdateTextEditingValue(
-          delegate.textEditingValue
-              .copyWith(selection: const TextSelection.collapsed(offset: 0)),
-          SelectionChangedCause.toolbar,
-        );
-      },
-    );
-  }
 
   /// Builder for material-style text selection handles.
   @override

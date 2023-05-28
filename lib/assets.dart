@@ -9,17 +9,11 @@ class Assets {
   static const String assets_fair_lib_src_page_complex_photo_gallery_fair_bin =
       'assets/fair/lib_src_page_complex_photo_gallery.fair.bin';
 
-  static const String assets_fair_lib_src_page_complex_photo_gallery_fair_js =
-      'assets/fair/lib_src_page_complex_photo_gallery.fair.js';
-
   static const String assets_fair_lib_src_page_complex_photo_gallery_fair_json =
       'assets/fair/lib_src_page_complex_photo_gallery.fair.json';
 
   static const String assets_fair_lib_src_page_complex_photo_gallery1_fair_bin =
       'assets/fair/lib_src_page_complex_photo_gallery1.fair.bin';
-
-  static const String assets_fair_lib_src_page_complex_photo_gallery1_fair_js =
-      'assets/fair/lib_src_page_complex_photo_gallery1.fair.js';
 
   static const String
       assets_fair_lib_src_page_complex_photo_gallery1_fair_json =
@@ -30,27 +24,17 @@ class Assets {
       'assets/fair/lib_src_page_complex_photo_gallery_item.fair.bin';
 
   static const String
-      assets_fair_lib_src_page_complex_photo_gallery_item_fair_js =
-      'assets/fair/lib_src_page_complex_photo_gallery_item.fair.js';
-
-  static const String
       assets_fair_lib_src_page_complex_photo_gallery_item_fair_json =
       'assets/fair/lib_src_page_complex_photo_gallery_item.fair.json';
 
   static const String assets_fair_lib_src_page_complex_photo_swiper_fair_bin =
       'assets/fair/lib_src_page_complex_photo_swiper.fair.bin';
 
-  static const String assets_fair_lib_src_page_complex_photo_swiper_fair_js =
-      'assets/fair/lib_src_page_complex_photo_swiper.fair.js';
-
   static const String assets_fair_lib_src_page_complex_photo_swiper_fair_json =
       'assets/fair/lib_src_page_complex_photo_swiper.fair.json';
 
   static const String assets_fair_lib_src_page_simple_function_domain_fair_bin =
       'assets/fair/lib_src_page_simple_function_domain.fair.bin';
-
-  static const String assets_fair_lib_src_page_simple_function_domain_fair_js =
-      'assets/fair/lib_src_page_simple_function_domain.fair.js';
 
   static const String
       assets_fair_lib_src_page_simple_function_domain_fair_json =
@@ -70,17 +54,11 @@ class Assets {
   static const String assets_fair_lib_src_page_simple_plugin_fair_bin =
       'assets/fair/lib_src_page_simple_plugin.fair.bin';
 
-  static const String assets_fair_lib_src_page_simple_plugin_fair_js =
-      'assets/fair/lib_src_page_simple_plugin.fair.js';
-
   static const String assets_fair_lib_src_page_simple_plugin_fair_json =
       'assets/fair/lib_src_page_simple_plugin.fair.json';
 
   static const String assets_fair_lib_src_page_simple_sugar_fair_bin =
       'assets/fair/lib_src_page_simple_sugar.fair.bin';
-
-  static const String assets_fair_lib_src_page_simple_sugar_fair_js =
-      'assets/fair/lib_src_page_simple_sugar.fair.js';
 
   static const String assets_fair_lib_src_page_simple_sugar_fair_json =
       'assets/fair/lib_src_page_simple_sugar.fair.json';
@@ -138,28 +116,21 @@ class Assets {
 
 final List<String> assetsArray = <String>[
   Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_bin,
-  Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_js,
   Assets.assets_fair_lib_src_page_complex_photo_gallery_fair_json,
   Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_bin,
-  Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_js,
   Assets.assets_fair_lib_src_page_complex_photo_gallery1_fair_json,
   Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_bin,
-  Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_js,
   Assets.assets_fair_lib_src_page_complex_photo_gallery_item_fair_json,
   Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_bin,
-  Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_js,
   Assets.assets_fair_lib_src_page_complex_photo_swiper_fair_json,
   Assets.assets_fair_lib_src_page_simple_function_domain_fair_bin,
-  Assets.assets_fair_lib_src_page_simple_function_domain_fair_js,
   Assets.assets_fair_lib_src_page_simple_function_domain_fair_json,
   Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_bin,
   Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_js,
   Assets.assets_fair_lib_src_page_simple_listenable_scope_fair_json,
   Assets.assets_fair_lib_src_page_simple_plugin_fair_bin,
-  Assets.assets_fair_lib_src_page_simple_plugin_fair_js,
   Assets.assets_fair_lib_src_page_simple_plugin_fair_json,
   Assets.assets_fair_lib_src_page_simple_sugar_fair_bin,
-  Assets.assets_fair_lib_src_page_simple_sugar_fair_js,
   Assets.assets_fair_lib_src_page_simple_sugar_fair_json,
   Assets.assets_fair_basic_config_json,
 
